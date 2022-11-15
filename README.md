@@ -5,7 +5,8 @@
 # About this EFI
 
 OpenCore loader (0.8.4) for DELL workstations T5810. Support macOS Big Sur to Ventura.
-Adding ResetTSCAdjust.efi driver solved the booting kernel panic issue due to out of sync TSC error ("non-monotonic time").
+
+Adding ResetTSCAdjust.efi driver solved the kernel panic issue casued by TSC out of sync error ("non-monotonic time") during Monterey/Ventura booting.
 
 **Supported Hardware**
 
