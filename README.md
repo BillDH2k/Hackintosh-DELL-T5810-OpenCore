@@ -63,5 +63,5 @@ Adding ResetTSCAdjust.efi driver solved the kernel panic issue casued by TSC out
 **Credits:**
 
 - This EFI was optimized from two earlier builds by OreyM ([GitHub link](https://github.com/OreyM/Hackintosh-Dell-T5810-Xeon-E5-26xx-V3-OpenCore-PowerMac-G5)) and NOTNICE ([Github link](https://github.com/NOTNlCE/Dell-Precision-T5810-OpenCore)). 
-- ResetTSCAdjust.efi tool by denskop ([Github link](https://github.com/denskop/VoodooTSCSync/issues/1#issuecomment-629837192)). This little tool allowed CPU TSC reset (DELL BIOS failed to do this) before macOS luanch. Without this, Monterey/Ventura booting would cause kernel panic due to "non-monotonic time" error.
+- ResetTSCAdjust.efi tool by denskop ([Github link](https://github.com/denskop/VoodooTSCSync/issues/1#issuecomment-629837192)). This little tool allowed CPU TSC reset (DELL BIOS failed to do this) before macOS luanch. Without this, Monterey/Ventura booting would encounter kernel panic due to "non-monotonic time" error.
 
