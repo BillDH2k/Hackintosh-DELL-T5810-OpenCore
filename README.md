@@ -10,7 +10,7 @@ OpenCore loader (0.8.4) for DELL workstations T5810. Support macOS Big Sur to Ve
 
 - T5810 (BIOS A33)
 - CPUs: E5-1600/2600 V3 & V4 Xeons (Hanswell/Broadwell)
-- Required BIOS Settings: SATA Operation -> AHCI, Secure Boot Enable -> Disabled, VT fir Direct I/O -> Disabled.
+- Required BIOS Settings: SATA Operation -> AHCI, Secure Boot Enable -> Disabled, VT for Direct I/O -> Disabled.
 
 **Installation:**
 
