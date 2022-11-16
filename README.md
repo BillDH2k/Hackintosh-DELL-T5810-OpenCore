@@ -49,7 +49,7 @@ Adding ResetTSCAdjust.efi driver to perform TSC Reset, required to solve the ker
 	- VirtualSMC.kext
 	- AppleALC.kext - On-board Audio (Layout ID 11)
 	- CpuTscSync.kext - CPU TSC sync (fix TSC out of sync from wake/sleep)
-	- IntelMausi.kext - LAN port driver (Intel i218LM, all models)
+	- IntelMausi.kext - Intel LAN port driver
 	- USBMap.kext - Custom USB port maps for T5810
 	- NVMeFix.kext - NvMe SSD on PCI-E adapter
 	- CtlnaAHCIPort.kext - additinal SATA ports support
