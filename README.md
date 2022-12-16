@@ -26,7 +26,7 @@ Adding ResetTSCAdjust.efi driver to perform TSC Reset, required to solve the ker
 
 **What Works:**
 
-- Everything, but Sleep/Wake has issue under Ventura.
+- Everything, but Sleep/Wake has issue under Monterey/Ventura.
 
 #
 
