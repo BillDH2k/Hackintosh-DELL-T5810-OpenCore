@@ -1,5 +1,5 @@
 # DELL-T5810-OpenCore (Monterey/Ventura Support)
- DELL Precision T5810 OpenCore 0.9.1
+ DELL Precision T5810 OpenCore 0.9.1. 
  Support macOS Big Sur/Monterey/Ventura.
 
 # About this EFI
