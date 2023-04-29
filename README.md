@@ -6,7 +6,7 @@
 
 OpenCore loader (0.9.1) for DELL workstations T5810 (reported to also work on T7810). Support macOS Big Sur to Ventura (13.3.1).
 
-Adding ResetTSCAdjust.efi driver to perform TSC Reset, required to solve the kernel panic during Monterey/Ventura booting.
+Adding ResetTSCAdjust.efi driver to perform TSC Reset during booting, required to solve the kernel panic during Monterey/Ventura booting.
 
 **Supported Hardware**
 
