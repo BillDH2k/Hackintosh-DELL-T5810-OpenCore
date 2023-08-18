@@ -26,7 +26,7 @@ Adding ResetTSCAdjust.efi driver to perform TSC Reset during booting, required t
 
 **What Works:**
 
-- Everything, but Sleep/Wake has issue under Monterey/Ventura (should be disabled for now).
+- Everything, except Sleep/Wake (loss of USB funciton after waking from sleep. Should be disabled for now).
 
 #
 
