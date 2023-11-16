@@ -26,7 +26,7 @@ Added ResetTSCAdjust.efi driver to perform TSC Reset during booting, required to
 
 **What Works:**
 
-- Everything, excpt Sleep/Wake (does not work beyond Big Sur).
+- Everything, excpt Sleep/Wake (Does not work beyond Big Sur)
 
 #
 
