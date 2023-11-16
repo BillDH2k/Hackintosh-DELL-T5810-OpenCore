@@ -10,7 +10,7 @@ Added ResetTSCAdjust.efi driver to perform TSC Reset during booting, required to
 
 **Supported Hardware**
 
-- Precision T5810 (BIOS A33)
+- Precision T5810 (BIOS A33/A32)
 - CPUs: E5-1600/2600 V3 & V4 Xeons (Hanswell/Broadwell)
 - Required BIOS Settings: SATA Operation -> AHCI, Secure Boot Enable -> Disabled, VT for Direct I/O -> Disabled.
 - [TIP]: If you had a working setup, but suddenly encounter OC/macOS booting issue, e.g. after a CPU change, toogle the BIOS setting [Memory Map I/O ABove 4G] could fix the problem. Either [YES] or [NO] would work. This would force the BIOS to re-initialize for the new hardware.
