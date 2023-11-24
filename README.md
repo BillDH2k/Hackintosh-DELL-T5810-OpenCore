@@ -1,12 +1,10 @@
 # DELL-T5810-OpenCore (Monterey/Ventura Support)
- DELL Precision T5810 OpenCore 0.9.1. 
- Support macOS Big Sur/Monterey/Ventura.
+ DELL Precision T5810 OpenCore 0.9.6. 
+ Support macOS Big Sur/Monterey/Ventura/Sonoma.
 
 # About this EFI
 
-OpenCore loader (0.9.1) for DELL workstations T5810 (reported to also work on T7810). Support macOS Big Sur to Ventura (13.4 tested).
-
-Added ResetTSCAdjust.efi driver to perform TSC Reset during booting, required to solve the kernel panic during Monterey/Ventura booting.
+OpenCore loader (0.9.6) for DELL workstations T5810 (reported to also work on T7810, possibly 7910). Support macOS Big Sur to Sonoma (14.1 tested). Sonoma update must run from the full installer.
 
 **Supported Hardware**
 
@@ -26,14 +24,14 @@ Added ResetTSCAdjust.efi driver to perform TSC Reset during booting, required to
 
 **What Works:**
 
-- Everything, excpt Sleep/Wake (Does not work beyond Big Sur)
+- Everything, excpt Sleep/Wake (should be disabled within the macOS, under System Settings). Also the internal speaker is not active.
 
 #
 
 **EFI Folder**
 
-- OpenCore 0.9.1
-- SYMBIOS: iMacPro1,1
+- OpenCore 0.9.6
+- SYMBIOS: MacPro7,1 (requried for Sonoma) or iMacPro1,1
 
 - ACPI folder:
 	- SSDT-EC.aml - Fix Embedded Controller, via OC Guide
@@ -49,12 +47,14 @@ Added ResetTSCAdjust.efi driver to perform TSC Reset during booting, required to
 	- WhateverGreen.kext
 	- VirtualSMC.kext
 	- AppleALC.kext - On-board Audio (Layout ID 11)
-	- CpuTscSync.kext - CPU TSC sync (fix TSC out of sync from wake/sleep)
 	- IntelMausi.kext - Intel LAN port driver
-	- USBMap.kext - Custom USB port maps for T5810
+	- USBMap_T5810.kext - Custom USB port maps for T5810
 	- NVMeFix.kext - NvMe SSD on PCI-E adapter
-	- CtlnaAHCIPort.kext - additinal SATA ports support
 	- X99_InjectorUSB3.kext - USB3 ports injector
+
+   	Removed (no longer neede):
+	- CpuTscSync.kext - CPU TSC sync (fix TSC out of sync from wake/sleep)
+	- CtlnaAHCIPort.kext - additinal SATA ports support
 
 - Driver folder:
 	- ResetTSCAdjust.efi - Reset TSC sync at OC boot (required for Monterey/Ventura. DELL BIOS failed to do this.)
