@@ -1,4 +1,4 @@
-# DELL-T5810-OpenCore (Monterey/Ventura/Sonoma Support)
+# DELL-T5810-OpenCore (Sonoma Support)
  DELL Precision T5810 OpenCore 0.9.6. 
  Support macOS Big Sur/Monterey/Ventura/Sonoma.
 
