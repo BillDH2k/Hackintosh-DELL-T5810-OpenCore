@@ -52,9 +52,9 @@ OpenCore loader (0.9.6) for DELL workstations T5810 (reported to also work on T7
 	- NVMeFix.kext - NvMe SSD on PCI-E adapter
 	- X99_InjectorUSB3.kext - USB3 ports injector
 
-   	Removed (no longer neede):
-	- CpuTscSync.kext - CPU TSC sync (fix TSC out of sync from wake/sleep)
-	- CtlnaAHCIPort.kext - additinal SATA ports support
+   	Removed (no longer needed):
+	- CpuTscSync.kext - CPU TSC sync (fix TSC out of sync from wake/sleep). Note: Sleep/Wake is disabled.
+	- CtlnaAHCIPort.kext - additinal SATA ports support.
 
 - Driver folder:
 	- ResetTSCAdjust.efi - Reset TSC sync at OC boot (required for Monterey/Ventura. DELL BIOS failed to do this.)
