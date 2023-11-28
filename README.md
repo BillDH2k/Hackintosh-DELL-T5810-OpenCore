@@ -11,7 +11,7 @@ OpenCore loader (0.9.6) for DELL workstations T5810 (reported to also work on T7
 - Precision T5810 (BIOS A33/A32)
 - CPUs: E5-1600/2600 V3 & V4 Xeons (Hanswell/Broadwell)
 - Required BIOS Settings: SATA Operation -> AHCI, Secure Boot Enable -> Disabled, VT for Direct I/O -> Disabled.
-- [TIP]: If you encounter OC/macOS booting issue (like "OCB:StartImage failed..."), e.g. after a CPU change, toogle the BIOS setting [Memory Map I/O ABove 4G], and/or, toogling [Enable Legacy Option ROMs], could fix the problem. Either [YES] or [NO] would work. The trick is to force BIOS to re-initialize for the new hardware.
+- [TIP]: If you encounter OC/macOS booting issue (like "OCB:StartImage failed..."), e.g. after a CPU change, toogle the BIOS setting [Memory Map I/O ABove 4G], and/or, toogling [Enable Legacy Option ROMs], could fix the problem. Either [YES] or [NO] would work. The trick is to force the BIOS to re-initialize for the new hardware.
 
 **Installation:**
 
@@ -48,9 +48,9 @@ OpenCore loader (0.9.6) for DELL workstations T5810 (reported to also work on T7
 	- VirtualSMC.kext
 	- AppleALC.kext - On-board Audio (Layout ID 11)
 	- IntelMausi.kext - Intel LAN port driver
-	- USBMap_T5810.kext - Custom USB port maps for T5810
+	- USBMap_T5810.kext - Custom USB port maps for T5810	(added MacPro7,1 support)
 	- NVMeFix.kext - NvMe SSD on PCI-E adapter
-	- X99_InjectorUSB3.kext - USB3 ports injector
+	- X99_InjectorUSB3.kext - USB3 ports injector	(cleaned up)
 
    	Removed (no longer needed):
 	- CpuTscSync.kext - CPU TSC sync (fix TSC out of sync from wake/sleep). Note: Sleep/Wake is disabled.
