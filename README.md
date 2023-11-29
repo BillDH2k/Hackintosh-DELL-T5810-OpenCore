@@ -57,7 +57,7 @@ OpenCore loader (0.9.6) for DELL workstations T5810 (reported to also work on T7
 	- CtlnaAHCIPort.kext - additinal SATA ports support.
 
 - Driver folder:
-	- ResetTSCAdjust.efi - Reset TSC sync at OC boot (required for Monterey/Ventura. DELL BIOS failed to do this.)
+	- ResetTSCAdjust.efi - Reset TSC sync at OC boot (required for Monterey/Ventura/Sonoma. DELL BIOS failed to do this.)
 
 #
 
