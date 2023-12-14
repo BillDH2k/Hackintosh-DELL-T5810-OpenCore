@@ -31,7 +31,7 @@ OpenCore loader (0.9.6) for DELL workstations T5810 (reported to also work on T7
 **EFI Folder**
 
 - OpenCore 0.9.6
-- SYMBIOS: MacPro7,1 (requried for Sonoma) or iMacPro1,1
+- SYMBIOS: MacPro7,1 or iMacPro1,1
 
 - ACPI folder:
 	- SSDT-EC.aml - Fix Embedded Controller, via OC Guide
