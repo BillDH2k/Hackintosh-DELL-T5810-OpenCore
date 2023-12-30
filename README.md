@@ -24,7 +24,7 @@ OpenCore loader (0.9.6) for DELL workstations T5810 (reported to also work on T7
 
 **What Works:**
 
-- Everything, excpt Sleep/Wake (should be disabled within the macOS, under System Settings). Also the internal speaker is not active.
+- Everything, excpt Sleep/Wake (should be disabled within the macOS, under System Settings).
 
 #
 
