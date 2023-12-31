@@ -46,7 +46,7 @@ OpenCore loader (0.9.6) for DELL workstations T5810 (reported to also work on T7
 	- Lilu.kext
 	- WhateverGreen.kext
 	- VirtualSMC.kext
-	- AppleALC.kext - On-board Audio (Layout ID 17)
+	- AppleALC.kext - On-board Audio (Layout ID 17. Front headphone, internal Spkr/LineOut-Rear)
 	- IntelMausi.kext - Intel LAN port driver
 	- USBMap_T5810.kext - Custom USB port maps for T5810	(added MacPro7,1 support)
 	- NVMeFix.kext - NvMe SSD on PCI-E adapter
