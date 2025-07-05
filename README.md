@@ -13,7 +13,7 @@ OpenCore loader (1.0.4) for DELL workstations T5810 (reported to also work on T7
 - Precision T5810 (BIOS A33/A32)
 - CPUs: E5-1600/2600 V3 & V4 Xeons (Hanswell/Broadwell)
 - Required BIOS Settings: SATA Operation -> AHCI, Secure Boot Enable -> Disabled, VT for Direct I/O -> Disabled.
-- [TIP]: If you encounter OC/macOS booting issue (like "OCB:StartImage failed..."), e.g. after a CPU change, toggle the BIOS setting [Memory Map I/O ABove 4G], and/or, toggling [Enable Legacy Option ROMs], could fix the problem. Either [YES] or [NO] would work. The trick is to force the BIOS to re-initialize for the new hardware.
+- **[TIP]**: If you encounter OC/macOS booting issue (like "OCB:StartImage failed..."), e.g. after a CPU change, toggle the BIOS setting [Memory Map I/O ABove 4G], and/or, toggling [Enable Legacy Option ROMs], could fix the problem. Either [YES] or [NO] would work. The trick is to force the BIOS to re-initialize for the new hardware.
 
 **Installation:**
 
@@ -21,6 +21,9 @@ OpenCore loader (1.0.4) for DELL workstations T5810 (reported to also work on T7
 - Choose correct CPU Emulation. Modify config.plist->Root->Kernel->Emulate->Cpuid1Data
 	- For V3 Xeon's: C3060300 00000000 00000000 00000000 (<- current setting)
 	- For V4 Xeon's: D4060300 00000000 00000000 00000000
+- Sonoma/Sequoia install/update: 
+	- Modify config.plist->Misc->Security->SecureBootModel-> Disabled
+	- After installation, set the value back to "default".
 
 #
 
