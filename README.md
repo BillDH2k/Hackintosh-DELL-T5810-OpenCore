@@ -1,10 +1,12 @@
 # DELL-T5810-OpenCore (Sonoma Support)
- DELL Precision T5810 OpenCore 0.9.6. 
- Support macOS Big Sur/Monterey/Ventura/Sonoma.
+ DELL Precision T5810 OpenCore 1.0.4. 
+ Support macOS Big Sur - Sequoia.
 
 # About this EFI
 
-OpenCore loader (0.9.6) for DELL workstations T5810 (reported to also work on T7810, possibly 7910). Support macOS Big Sur to Sonoma (14.1 tested). Sonoma update must run from the full installer.
+** Update ** (7/4/2025) - Updated to OC 1.0.4 
+
+OpenCore loader (1.0.4) for DELL workstations T5810 (reported to also work on T7810, possibly 7910). Support macOS Big Sur to Sequoia (15.5 tested). Sonoma update must run from the full installer.
 
 **Supported Hardware**
 
@@ -30,7 +32,7 @@ OpenCore loader (0.9.6) for DELL workstations T5810 (reported to also work on T7
 
 **EFI Folder**
 
-- OpenCore 0.9.6
+- OpenCore 1.0.4
 - SYMBIOS: MacPro7,1 or iMacPro1,1
 
 - ACPI folder:
