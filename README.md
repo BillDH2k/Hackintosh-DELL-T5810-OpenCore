@@ -1,5 +1,5 @@
 # DELL-T5810-OpenCore (Sequoia Support)
-**Update** (7/4/2025) - Updated to OC 1.0.4 
+**Update** (7/4/2025) - Updated to OC 1.0.4. Tested with Sequoia 15.5.
 
 # About this EFI
 
