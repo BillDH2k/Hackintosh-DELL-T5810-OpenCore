@@ -10,7 +10,7 @@ OpenCore loader (1.0.4) for DELL workstations T5810 (reported to also work on T7
 
 **Supported Hardware**
 
-- Precision T5810 (BIOS A33/A32)
+- Precision T5810 (BIOS A34/A33/A32)
 - CPUs: E5-1600/2600 V3 & V4 Xeons (Hanswell/Broadwell)
 - Required BIOS Settings: SATA Operation -> AHCI, Secure Boot Enable -> Disabled, VT for Direct I/O -> Disabled.
 - **[TIP]**: If you encounter OC/macOS booting issue (like "OCB:StartImage failed..."), e.g. after a CPU change, toggle the BIOS setting [Memory Map I/O ABove 4G], and/or, toggling [Enable Legacy Option ROMs], could fix the problem. Either [YES] or [NO] would work. The trick is to force the BIOS to re-initialize for the new hardware.
@@ -31,6 +31,15 @@ OpenCore loader (1.0.4) for DELL workstations T5810 (reported to also work on T7
 
 - Everything, excpt Sleep/Wake (should be disabled within the macOS, under System Settings).
 
+#
+
+**Other (optional):**
+
+- Unlock CFG LOCK in BIOS (Tested on A32-A34 BIOS):
+  	- Add modGRUBShell.efi [link](https://github.com/datasone/grub-mod-setup_var) to OC/Tools folder, and add an entry to config.plist->Root->Misc->Tools
+  	- At the OC picker, select "modGRUBShell" and hit Return. At the promt grub> , enturn the following command (WARNING: you MUST type in the EXACT words, or you could brick your BIOS!)
+  	- 	**setup_cv_var IntelSetup 0x72 0x1 0x0**
+  	- If successful (use VerifyMsrE2.efi to check), set config.plist->Root->Kernel->Quirks->AppleXcpmCfgLock-> False.
 #
 
 **EFI Folder**
