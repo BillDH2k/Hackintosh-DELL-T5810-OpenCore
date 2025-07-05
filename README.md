@@ -2,9 +2,9 @@
  DELL Precision T5810 OpenCore 1.0.4. 
  Support macOS Big Sur - Sequoia.
 
-# About this EFI
+**Update** (7/4/2025) - Updated to OC 1.0.4 
 
-** Update ** (7/4/2025) - Updated to OC 1.0.4 
+# About this EFI
 
 OpenCore loader (1.0.4) for DELL workstations T5810 (reported to also work on T7810, possibly 7910). Support macOS Big Sur to Sequoia (15.5 tested). Sonoma update must run from the full installer.
 
