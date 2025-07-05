@@ -1,7 +1,4 @@
 # DELL-T5810-OpenCore (Sequoia Support)
- DELL Precision T5810 OpenCore 1.0.4. 
- Support macOS Big Sur - Sequoia.
-
 **Update** (7/4/2025) - Updated to OC 1.0.4 
 
 # About this EFI
