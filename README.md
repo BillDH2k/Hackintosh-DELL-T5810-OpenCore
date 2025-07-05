@@ -1,4 +1,4 @@
-# DELL-T5810-OpenCore (Sonoma Support)
+# DELL-T5810-OpenCore (Sequoia Support)
  DELL Precision T5810 OpenCore 1.0.4. 
  Support macOS Big Sur - Sequoia.
 
