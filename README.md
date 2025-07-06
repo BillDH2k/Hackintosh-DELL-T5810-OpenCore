@@ -32,10 +32,10 @@ OpenCore loader (1.0.4) for DELL workstations T5810 (reported to also work on T7
 
 **Other (optional):**
 
-- Unlock CFG LOCK in BIOS (Tested on A32-A34 BIOS):
+- Unlock CFG LOCK in BIOS (Tested on A32-A34 BIOS only):
   	- Add modGRUBShell.efi [link](https://github.com/datasone/grub-mod-setup_var) to OC/Tools folder, and add an entry to config.plist->Root->Misc->Tools
   	- At the OC picker, select "modGRUBShell" and hit Return. At the promt grub> , enturn the following command (WARNING: you MUST type in the EXACT words, or you could brick your BIOS!):
-  		- **setup_cv_var IntelSetup 0x72 0x1 0x0**
+  		- **setup_var_cv IntelSetup 0x72 0x1 0x0**
   	- If successful (use VerifyMsrE2.efi to check), set config.plist->Root->Kernel->Quirks->AppleXcpmCfgLock-> False.
 #
 
